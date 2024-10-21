@@ -1,0 +1,200 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \usepackage{longtable}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{-2pt}
+\begin{center}
+    {\Huge \scshape {Guilherme Augusto de Oliveira}}\\
+    \textbf{\href{https://github.com/Guilhermeaug}{GitHub | }}\textbf{\href{https://www.hackerrank.com/Guilhermeaug}{HackerRank | }}\textbf{\href{https://www.linkedin.com/in/guihermeaugusto/}{Linkedin}}\\
+    \vspace*{2pt}
+    \href{mailto:guilhermeaugustodeoliveira66@gmail.com}{guilhermeaugustodeoliveira66@gmail.com} | \href{tel:+55 (31) 9 9510-0683}{+55 (31) 9 9510-0683}\\
+    \vspace*{2pt}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Objetivo profissional
+%'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Objetivo profissional}
+\vspace{2mm}
+Atuar na área de desenvolvimento de software visando resolver problemas reais e impactar positivamente a vida das pessoas. Busco uma oportunidade de trabalho que me permita aprimorar continuamente minhas habilidades técnicas e interpessoais.
+\vspace{2mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Resumo
+%'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Resumo}
+\vspace{2mm}
+Estudante do sexto período de Engenharia de Computação no CEFETMG, com diploma técnico em informática pela mesma instituição. Ingressei no mundo da programação aos 16 anos e desde então acumulei experiência, tendo trabalhado em uma empresa de desenvolvimento de aplicativos e atuado como aprendiz de engenharia de software. Sempre comprometido com a entrega de soluções robustas e agradáveis aos clientes, concentro meus esforços em tecnologias \textit{backend}. Estudo e aplico as melhores práticas de arquitetura de software em meus projetos pessoais e comunitários diariamente.
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Educação}
+\vspace{2mm}
+\textbf{Centro Federal de Educação Tecnológica de Minas Gerais}\hfill Contagem\\
+Ensino Médio Técnico Informática \hfill Março 2018 - Março 2021\\
+
+\vspace{2mm}
+\textbf{Centro Federal de Educação Tecnológica de Minas Gerais}\hfill Belo Horizonte\\
+Graduação Engenharia de Computação \hfill Março 2021 - Dezembro 2025\\
+
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Experience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Experiência Profissional}
+\vspace{2mm}
+
+\textbf{LEVTY | Trainee de Engenharia de Software}\hfill Belo Horizonte | Julho 2023 - Atualmente\\
+\vspace{-4mm}
+\begin{itemize} \itemsep -1pt
+    \vspace{2mm}
+    \item[] Atualmente participo do programa de trainee da empresa, que visa formar profissionais versáteis e capacitados para atuar em todas as frentes da Engenharia de Software, desde a participação de reuniões com clientes para definição de requisitos até a concepção e desenvolvimento de soluções de software robustas e escaláveis.
+\end{itemize}
+
+\textbf{Pesquisador Científico}\hfill Belo Horizonte | Outubro 2022 - Outubro 2023\\
+\vspace{-4mm}
+\begin{itemize} \itemsep -1pt
+    \vspace{2mm}
+    \item[] Participei de uma iniciação científica em desenvolvimento web, colaborando com a Faculdade de Fonoaudiologia da UFMG. Desenvolvi o sistema web \href{http://scriptvoz.medicina.ufmg.br/}{ScriptVoz}, oferecendo um ambiente seguro para estudantes de fonoaudiologia treinarem raciocínio clínico em casos reais de disfonias vocais. O sistema inclui o estudo de pacientes cadastrados e a criação de casos clínicos para aprimorar a formação acadêmica dos estudantes.
+\end{itemize}
+
+% \textbf{COMPET -- Programa de Educação Tutorial}\hfill Belo Horizonte | Outubro 2021 - Março de 2023\\
+% \vspace{-4mm}
+% \begin{itemize} \itemsep -1pt
+%     \vspace{2mm}
+%     \item[] Inicialmente participei do time de administração do projeto, sendo responsável por lidar com as burocracias de entrada/saída de membros, além de organizar as datas de reuniões, e principalmente, os processos de compras de materiais e equipamentos para o grupo.
+%     \item[] Posteriormente participei do time de desenvolvimento, sendo um dos responsáveis por dar manutenção ao site do projeto e por organizar e desenvolver um sistema de cadastro de eventos para o grupo, além de outros projetos paralelos.
+% \end{itemize}
+
+\textbf{Codificar}\textbf{ | Estagiário de Desenvolvimento Mobile} \hfill Belo Horizonte | Fevereiro 2021 - Junho 2021\\
+\vspace{-4mm}
+\begin{itemize} \itemsep -1pt
+    \vspace{2mm}
+    \item[] Participei do time de desenvolvimento mobile, utilizando a biblioteca \textbf{React Native} para produzir aplicativos para os sistemas android e ios.
+    \item[] Além de desenvolvedor, também prestei suporte aos clientes e fui responsável pela disponibilização e atualização de seus aplicativos nas lojas da Google e Apple. Ademais, realizei pequenos ajustes no backend, que utiliza o framework Laravel.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Idiomas
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Idiomas}
+\vspace{2mm}
+\begin{longtable}{p{6cm}p{12cm}}
+    Inglês intermediário: & Leitura e escrita avançada com boa capacidade de comunicação \\
+\end{longtable}
+\vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Habilidades}
+\vspace{2mm}
+\begin{longtable}{p{6cm}p{12cm}}
+    Linguagens de Programação: & Java, Typescript, Dart, C++            \\
+    Bibliotecas/Frameworks:    & Spring Framework, Flutter, React       \\
+    Bancos de Dados:           & Bancos relacionais, MongoDB, Firestore \\
+    Cloud:                     & Azure, Heroku, Firebase                \\
+\end{longtable}
+\vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Certifications
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Certificados}
+\vspace{2mm}
+• Microsoft Azure Fundamentals - \textbf{\href{https://learn.microsoft.com/pt-br/users/guilhermeaugustodeoliveira-7506/credentials/d8dc0a889b4f36a4}{AZURE}}\\
+• MongoDB Associate Developer Java - \textbf{\href{https://www.credly.com/badges/7351ea72-bb6b-4375-b931-b43dd5ba7112/public_url}{MONGODB}}\\
+• Iniciação Científica Júnior na área de Estruturas de Dados - \textbf{\href{https://drive.google.com/file/d/19xVXYNmpk2HWkNqeHK4gTZRdipjeWM1M/view?usp=sharing}{CEFETMG}}\\
+
+\end{document}

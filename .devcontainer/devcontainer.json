@@ -49,10 +49,10 @@
 					"%DOC%"
 				],
 				// Remove / comment the next 3 lines to remove dark view for pdf
-				"latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717", // For Dark Viewwer
-				"latex-workshop.latex.autoBuild.run": "never",
-				"latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
-				"latex-workshop.view.pdf.color.dark.backgroundColor": "#171717", // For Dark Viewer
+				// "latex-workshop.view.pdf.color.dark.pageColorsBackground": "#171717", // For Dark Viewwer
+				"latex-workshop.latex.autoBuild.run": "onSave",
+				// "latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
+				// "latex-workshop.view.pdf.color.dark.backgroundColor": "#171717", // For Dark Viewer
 				"editor.formatOnSave": true,
 				"latex-workshop.latex.pdfWatch.delay": 500,
  				//"latex-workshop.latex.watch.delay": 500, // Deprecated. See here: https://github.com/sanjib-sen/WebLaTex/issues/8
@@ -69,7 +69,10 @@
 						"language": "latex",
 						"scheme": "file"
 					}
-				]
+				],
+				"ltex.language": "pt-BR",
+				"ltex.showStatusBarItem": true,
+				"ltex.additionalRules.motherTongue": "pt-BR"
 			},
 			"extensions": [
 				"James-Yu.latex-workshop",
@@ -77,9 +80,9 @@
 				// Remove the line below if you do not want Live-Collaboration Feature
 				"ms-vsliveshare.vsliveshare",
 				// Uncomment the line below if you do not want LanguageTool Support
-				// "valentjn.vscode-ltex",
+				"valentjn.vscode-ltex"
 				// Remove the line below if you do not want Grammarly
-				"znck.grammarly"
+				//"znck.grammarly"
 			]
 		}
 	}
