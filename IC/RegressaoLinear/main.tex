@@ -1,0 +1,46 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{times}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Regressão Linear com uma Variável}
+\author{Guilherme Augusto, Yasmim Augusta}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+1. O que é chamada de regressão logística?\\
+
+A regressão logística é um modelo estatístico utilizado para prever a probabilidade de ocorrência de um evento binário, com base em uma ou mais variáveis independentes. Ela é amplamente utilizada em problemas de classificação, nos quais o objetivo é prever a classe de um objeto com base em suas características.
+
+\vspace{1cm}
+
+2. Quais são as técnicas utilizadas no treinamento semi-supervisionado?\\
+
+No treinamento semi-supervisionado, são utilizadas técnicas que combinam dados rotulados e não rotulados para treinar um modelo de aprendizado de máquina. Exemplos:
+\begin{itemize}
+    \item Propagação de rótulos: Atribui rótulos aos dados não rotulados com base nos dados rotulados mais próximos.
+    \item Co-training: Treina o modelo em duas visualizações diferentes dos dados, cada uma com um conjunto diferente de características.
+    \item Aprendizado ativo: Seleciona os exemplos mais informativos dos dados não rotulados para serem rotulados pelo usuário.
+    \item Treinamento por reforço: Utiliza recompensas para guiar o treinamento do modelo.
+\end{itemize}
+
+\vspace{1cm}
+
+3. Quais são as técnicas utilizadas no treinamento por reforço?\\
+
+No treinamento por reforço, são utilizadas técnicas que utilizam recompensas para guiar o treinamento do modelo. Um exemplo é o gradiente de política, que ajusta a política do agente com base no gradiente da recompensa esperada.
+
+\vspace{1cm}
+
+4. Explique a diferença entre Sum of Squared Error (SSE) e Total Sum of Squares (TSS).\\
+
+O erro quadrático total (SSE) é a soma dos quadrados das diferenças entre os valores observados e os valores previstos pelo modelo. Ele é utilizado para avaliar o ajuste do modelo aos dados. Já a soma total dos quadrados (TSS) é a soma dos quadrados das diferenças entre os valores observados e a média dos valores observados. Ela é utilizada para avaliar a variabilidade dos dados em relação à média.
+
+\end{document}
